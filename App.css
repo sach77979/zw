@@ -1,0 +1,29 @@
+.button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Animation for appearing/disappearing element */
+.visible-box {
+  padding: 16px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-20px) rotate(-10deg);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.visible-box.show {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}
